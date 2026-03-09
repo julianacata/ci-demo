@@ -1,1 +1,5 @@
-# ci-demo
+Este projeto consiste na implementação de um pipeline de Continuous Integration (CI) utilizando o GitHub Actions. O objetivo principal da atividade foi configurar uma pipeline simples enviando o comando ao repositório.
+
+A estrutura do projeto é composta pelo arquivo de configuração .github/workflows/ci.yml, que contém as instruções do pipeline, e este arquivo README para documentação. No arquivo de workflow, defini o nome da automação e o evento de disparo como "push", o que garante que qualquer alteração no código inicie o processo. O job foi configurado para rodar em um ambiente Ubuntu atualizado e possui um passo simples que utiliza o comando echo para imprimir uma mensagem de sucesso no terminal.
+
+Assim que o push é realizado no GitHub, a plataforma identifica o arquivo YAML e inicia o workflow automaticamente. O sistema reserva uma máquina virtual, executa os passos definidos e exibe o resultado no console. Ao final da execução, é possível verificar na aba Actions se o pipeline rodou corretamente, confirmando que a integração foi concluída com sucesso e a mensagem personalizada foi exibida no log do sistema.
